@@ -5,8 +5,8 @@ function App() {
   
 
   return (
-    <div>
-      <input type='text'/>
+    <div className={styles.calculator}>
+      <input className={styles.display} type='text'/>
       <div className='buttons-container'>
         <buttons>C</buttons>
       </div>
