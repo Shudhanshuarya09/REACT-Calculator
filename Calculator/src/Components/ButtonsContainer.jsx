@@ -1,15 +1,30 @@
 import styles from "./ButtonsContainer.module.css";
 const ButtonsContainer = () => {
-  return(
+  const buttonNames = [
+    "C",
+    " 1",
+    "2 ",
+    " +",
+    " 3",
+    " 4",
+    " -",
+    " 5",
+    " 6",
+    " *",
+    " 8",
+    "/ ",
+    " =",
+    " 9",
+    " 0",
+    " .",
+  ];
+
+  return (
     <div className={styles.buttonsContainer}>
-        <buttons className={styles.button}>C</buttons>
-        <buttons className={styles.button}>1</buttons>
-        <buttons className={styles.button}>2</buttons>
-        <buttons className={styles.button}>3</buttons>
-        <buttons className={styles.button}>4</buttons>
-        <buttons className={styles.button}>5</buttons>
-        <buttons className={styles.button}>6</buttons>
-      </div>
+      {buttonNames.map((buttonName) => (
+        <buttons className={styles.button}>{buttonName}</buttons>
+      ))}
+    </div>
   );
 };
 
