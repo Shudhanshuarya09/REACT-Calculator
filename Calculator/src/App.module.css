@@ -3,12 +3,7 @@
   border-radius: 8px;
   width: 200px;
 }
-.display {
-  background-color: azure;
-  margin: 10px;
-  width: 175px;
-  font-size: 25px;
-}
+
 .buttonsContainer {
   display: flex;
   justify-content: center;
